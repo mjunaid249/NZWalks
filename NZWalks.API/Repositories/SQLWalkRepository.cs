@@ -84,6 +84,7 @@ namespace NZWalks.API.Repositories
 
                 return null;
             }
+            
 
             existingWalk.Difficulty = walk.Difficulty;
             existingWalk.DifficultyId = walk.DifficultyId;
