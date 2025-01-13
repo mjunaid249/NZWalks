@@ -16,7 +16,7 @@ namespace NZWalks.API.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-
+                
         }
     }
 }
