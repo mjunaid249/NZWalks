@@ -17,7 +17,7 @@ namespace NZWalks.API.Repositories
         {
             await dbContext.Regions.AddAsync(region);
 
-            await dbContext.SaveChangesAsync(); 
+            await dbContext.SaveChangesAsync();
             return region;
         }
 
@@ -25,9 +25,10 @@ namespace NZWalks.API.Repositories
         {
             var regionExist = await dbContext.Regions.FirstOrDefaultAsync(x => x.Id == id);
 
-            if (regionExist == null) {
-            
-                    return null;
+            if (regionExist == null)
+            {
+
+                return null;
             }
 
             dbContext.Regions.Remove(regionExist);
